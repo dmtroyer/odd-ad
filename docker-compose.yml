@@ -4,7 +4,7 @@ services:
   jekyll:
     image: jekyll/jekyll:4.1.0
     command: serve
-    entrypoint: bundle exec jekyll
+    entrypoint: jekyll
     ports:
       - "4000:4000"
     volumes:
