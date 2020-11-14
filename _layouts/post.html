@@ -13,9 +13,10 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <img src="/assets/images/{{ page.image }}" />
+    <a href="{{ page.link }}">
+      <img src="{{ page.image }}" alt="{{ page.title | escape }}"/>
+    </a>
     {{ content }}
   </div>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
